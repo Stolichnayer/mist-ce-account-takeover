@@ -43,8 +43,8 @@ After obtaining a valid session cookie, the attacker can manually edit their bro
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/stolichnayer/MistATO_PoC.git
-cd MistATO_PoC
+git clone https://github.com/stolichnayer/CVE-2025-MIST.git
+cd CVE-2025-MIST
 ```
 
 ### 2️⃣ Install Dependencies
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 Once the dependencies are installed, run the PoC script:
 
 ```sh
-python MistATO_PoC.py
+python exploit.py
 ```
 ### 4️⃣ Exploiting the Session Cookie
 
