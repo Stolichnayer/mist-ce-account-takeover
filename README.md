@@ -1,5 +1,6 @@
-# Mist CE v4.7.1
 # Account Takeover via Arbitrary API Token Creation
+
+## Mist CE v4.7.1
 
 ## 📜 Description
 
