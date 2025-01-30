@@ -7,15 +7,11 @@ This repository contains a proof-of-concept (PoC) script demonstrating a Broken 
 By exploiting the ability to generate arbitrary API tokens without authentication, the script obtains a session cookie,  
 allowing an attacker to impersonate a victim and access their account.
 
----
-
 ## ⚠️ Disclaimer
 
 This project is intended for **educational and ethical research purposes only**.  
 Unauthorized testing on systems without **explicit permission** is illegal.  
 Use responsibly and only on systems you own or have permission to test.
-
----
 
 ## 🎯 Features
 
@@ -24,21 +20,17 @@ Use responsibly and only on systems you own or have permission to test.
 - 🔓 **Login Bypass via API Token**
 - 🎭 **Session Hijacking & Account Takeover**
 
----
-
 ## 🎬 Demonstration
 
 ### 🔹 Script Running  
 The script generates an API token, fetches the necessary CSRF token and temporary session cookie, and logs into the account.
 
-![Script Running](/assets/Script%20Running.gif)
+![Script Running](/assets/script_running.gif)
 
 ### 🔹 Account Access via Cookie  
 After obtaining a valid session cookie, the attacker can manually edit their browser's session to hijack the victim's account.
 
-![Account Access](Account%20Access.gif)
-
----
+![Account Access](/assets/account_access.gif)
 
 ## 🛠️ Usage
 
@@ -65,7 +57,7 @@ python exploit.py
 ```
 ### 4️⃣ Exploiting the Session Cookie
 
-After a successful login, use the stolen session cookie to access the victim’s account:
+After the script's successful login, use the generated session cookie to access the victim’s account:
 
 - Open Developer Tools in your browser (F12 or Ctrl+Shift+I).
 
