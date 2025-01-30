@@ -30,7 +30,7 @@ Use responsibly and only on systems you own or have permission to test.
 ### 🔹 Script Running  
 The script generates an API token, fetches the necessary CSRF token and temporary session cookie, and logs into the account.
 
-![Script Running](Script%20Running.gif)
+![Script Running](/assets/Script%20Running.gif)
 
 ### 🔹 Account Access via Cookie  
 After obtaining a valid session cookie, the attacker can manually edit their browser's session to hijack the victim's account.
