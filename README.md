@@ -67,10 +67,9 @@ After the script's successful login, use the generated session cookie to access 
 
 - Refresh the page and gain full access to the victim’s account.
 
-## 👨‍💻 Author
+## 🧑‍💻 Discovery
 
-Alex Perrakis
+The **CVE-2025-XXXX** vulnerability was discovered by **Alex Perrakis** (Stolichnayer).
 
-GitHub: https://github.com/Stolichnayer
 
 
