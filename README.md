@@ -1,12 +1,16 @@
+# CVE-2025-MIST
 # Account Takeover via Arbitrary API Token Creation
-
-## Mist CE v4.7.1
 
 ## 📜 Description
 
 This repository contains a proof-of-concept (PoC) script demonstrating a Broken Access Control vulnerability, leading to **Account Takeover** in Mist CE v4.7.1. 
 By exploiting the ability to generate arbitrary API tokens without authentication, the script obtains a session cookie,  
 allowing an attacker to impersonate a victim and access their account.
+
+## 📌 Affected Version
+
+ - Mist CE v4.7.1 (latest release)
+ - Other versions may also be affected but have not been tested
 
 ## ⚠️ Disclaimer
 
