@@ -25,7 +25,7 @@ Use responsibly and only on systems you own or have permission to test.
 - 🔓 **Login Bypass via API Token**
 - 🎭 **Session Hijacking & Account Takeover**
 
-## 🎬 Demonstration
+## 🎬 Exploit Demonstration
 
 ### 🔹 Script Running  
 The script generates an API token, fetches the necessary CSRF token and temporary session cookie, and logs into the account.
