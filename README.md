@@ -1,5 +1,5 @@
 # CVE-2025-MIST
-# Account Takeover via Arbitrary API Token Creation
+## Account Takeover via Arbitrary API Token Creation
 
 ## 📜 Description
 
