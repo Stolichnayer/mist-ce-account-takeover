@@ -1,7 +1,8 @@
+# Account Takeover via Arbitrary API Token Creation
 <table>
   <tr>
     <td width="150" rowspan="2">
-      <a href="https://summerpearlgroup.gr" target="_blank">
+      <a href="https://github.com/mistio/mist-ce" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/1569127?s=200&v=4" alt="Summer Pearl Logo" width="120"/>
       </a>
     </td>
@@ -15,10 +16,10 @@
       <table>
         <tr>
           <td>
-            🔗 <a href="https://summerpearlgroup.gr" target="_blank">Mist Repository</span></a>
+            🔗 <a href="https://github.com/mistio/mist-ce" target="_blank">Mist Github Repository</span></a>
           </td>
           <td style="padding-left: 15px;">
-            🚀 <a href="https://github.com/mistio/mist-ce/releases/tag/v4.7.2" target="_blank"> Release v4.7.2 (Patch)</span></a>
+            🚀 <a href="https://github.com/mistio/mist-ce/releases/tag/v4.7.2" target="_blank"> Patched Version (v4.7.2) </span></a>
           </td>
         </tr>
       </table>
@@ -26,13 +27,11 @@
   </tr>
 </table>
 
-## Account Takeover via Arbitrary API Token Creation
-
 ## 📜 Description
 
-**Mist Community Edition (CE)** versions prior to **4.7.1** contain a critical **Broken Access Control** vulnerability, allowing an **unauthenticated attacker** to generate an arbitrary API token for any user or administrator account. This flaw is triggered by manipulating the API token creation request, requiring only the victim’s email address for exploitation. Successful exploitation results in **Account Takeover**, granting the attacker full access to the victim's account.
+Mist Community Edition (CE) versions prior to 4.7.2 contain an unauthenticated API token generation vulnerability. By manipulating token creation requests with a known victim email address, attackers can generate valid API tokens for any user or administrator account, leading to full account takeover. This flaw bypasses all authentication controls and requires no user interaction.
 
-A **proof-of-concept (PoC) Python script** is provided in this repository, automating the exploitation of this vulnerability by generating an arbitrary API token and performing the necessary steps to hijack a victim’s account.
+A proof-of-concept (PoC) python script is provided in this repository, automating the exploitation of this vulnerability by generating an arbitrary API token and performing the necessary steps to hijack a victim’s account.
 
 ## 🔍 Affected Versions
 
@@ -65,6 +64,7 @@ After obtaining a valid session cookie, the attacker can manually edit their bro
 ![Account Access](/assets/account_access.gif)
 
 ## 🎬 Exploit Demonstration (Manually)
+> The video below demonstrates step-by-step manual exploitation of this vulnerability without script automation.
 
 <a href="https://www.youtube.com/watch?v=Lc6EIhNivXI" target="_blank">
   <img src="https://img.youtube.com/vi/Lc6EIhNivXI/maxresdefault.jpg"/>
@@ -107,8 +107,11 @@ After the script's successful login, use the generated session cookie to access 
 
 ## 🧑‍💻 Discovery
 
-The **CVE-2025-XXXX** vulnerability was discovered by **Alex Perrakis** (Stolichnayer).
+This vulnerability was discovered by **Alex Perrakis** (Stolichnayer).
 
 ## 🔗 References:
 - [Mist CE Github Repository](https://github.com/mistio/mist-ce)
+- [Patched Version (v4.7.2)](https://github.com/mistio/mist-ce/releases/tag/v4.7.2)
+- [Fix Commit](https://github.com/mistio/mist.api/commit/db10ecb62ac832c1ed4924556d167efb9bc07fad)
+
 
