@@ -74,8 +74,8 @@ After obtaining a valid session cookie, the attacker can manually edit their bro
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/stolichnayer/CVE-2025-MIST.git
-cd CVE-2025-MIST
+git clone https://github.com/stolichnayer/mist-ce-account-takeover.git
+cd mist-ce-account-takeover
 ```
 
 ### 2️⃣ Install Dependencies
