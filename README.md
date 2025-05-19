@@ -1,15 +1,45 @@
-# CVE-2025-MIST
+<table>
+  <tr>
+    <td width="150" rowspan="2">
+      <a href="https://summerpearlgroup.gr" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/1569127?s=200&v=4" alt="Summer Pearl Logo" width="120"/>
+      </a>
+    </td>
+    <td>
+      <h1>Mist Community Edition</h1>
+      <h3> An Open-Source Multicloud Management Platform</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+            🔗 <a href="https://summerpearlgroup.gr" target="_blank">Mist Repository</span></a>
+          </td>
+          <td style="padding-left: 15px;">
+            🚀 <a href="https://github.com/mistio/mist-ce/releases/tag/v4.7.2" target="_blank"> Release v4.7.2 (Patch)</span></a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 ## Account Takeover via Arbitrary API Token Creation
 
 ## 📜 Description
 
-**Mist Community Edition (CE) v4.7.1** contains a critical **Broken Access Control vulnerability**, allowing an **unauthenticated attacker** to generate an arbitrary API token for any user or administrator account. This flaw is triggered by manipulating the API token creation request, requiring only the victim’s email address for exploitation. Successful exploitation results in **Account Takeover**, granting the attacker full access to the victim's account.
+**Mist Community Edition (CE)** versions prior to **4.7.1** contain a critical **Broken Access Control** vulnerability, allowing an **unauthenticated attacker** to generate an arbitrary API token for any user or administrator account. This flaw is triggered by manipulating the API token creation request, requiring only the victim’s email address for exploitation. Successful exploitation results in **Account Takeover**, granting the attacker full access to the victim's account.
 
 A **proof-of-concept (PoC) Python script** is provided in this repository, automating the exploitation of this vulnerability by generating an arbitrary API token and performing the necessary steps to hijack a victim’s account.
 
-## 📌 Affected Version
- - Mist Community Edition (CE) v4.7.1
- - Other versions prior to v4.7.1 may also be affected
+## 🔍 Affected Versions
+
+| Status       | Version         |
+|--------------|-----------------|
+| 🔴 Vulnerable |  ≤ `4.7.1`      |
+| 🟢  Fixed     |  &nbsp;&nbsp;`4.7.2`      |   
 
 ## ⚠️ Disclaimer
 
@@ -34,7 +64,7 @@ After obtaining a valid session cookie, the attacker can manually edit their bro
 
 ![Account Access](/assets/account_access.gif)
 
-## 🎬 Exploit Demonstration (Manual)
+## 🎬 Exploit Demonstration (Manually)
 
 <a href="https://www.youtube.com/watch?v=Lc6EIhNivXI" target="_blank">
   <img src="https://img.youtube.com/vi/Lc6EIhNivXI/maxresdefault.jpg"/>
